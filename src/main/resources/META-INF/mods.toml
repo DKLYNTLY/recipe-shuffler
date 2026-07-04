@@ -1,0 +1,42 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = '''
+Proprietary License
+
+This mod, "Recipe Shuffler," is the proprietary property of DarklyStudios. All rights reserved.
+
+You may:
+- Use this mod for personal, non-commercial purposes.
+
+You may not:
+- Copy, modify, distribute, or create derivative works based on this mod.
+- Upload this mod to any website or platform without explicit permission from the author.
+- Use this mod for commercial purposes.
+
+Any unauthorized use of this mod is strictly prohibited and may result in legal action.
+
+For permissions, contact DKLYNTLY at DarklyStudios@outlook.com.
+'''
+
+[[mods]]
+modId = "recipe_shuffler"
+version = "1.0.4"
+displayName = "Recipe Shuffler"
+authors = "DarklyStudios (dklyntly)"
+description = '''
+Randomizes all recipe outputs, including recipes added by other mods, using the world seed.
+'''
+
+[[dependencies."recipe_shuffler"]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."recipe_shuffler"]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "AFTER"
+side = "BOTH"
